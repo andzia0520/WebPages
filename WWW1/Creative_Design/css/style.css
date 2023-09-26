@@ -145,3 +145,45 @@ main h2 {
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
+
+.services-list {
+	margin: 0 auto;
+	width: 200px;
+	list-style-type: none;
+}
+
+.services-list-item {
+	padding: 15px;
+}
+
+.contact-info {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.contact-info .fa-solid {
+	margin-right: 10px;
+
+}
+.prices-table {
+	margin: 0 auto;
+	border: 1px solid black;
+	}
+
+.prices-table td {
+	padding: 10px 30px;
+	margin: 10px 30px;
+	height: 30px;
+
+	border: 1px solid black;
+	text-align: center;
+}
+
+.prices-table th {
+	width: 160px;
+	font-size: 30px;
+	border: 1px solid black;
+	text-align: center;
+}
+
