@@ -27,6 +27,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 
+	font-size: 12px;
 	color: #fff;
 }
 
@@ -39,6 +40,12 @@ body {
 .hero-text span {
 	text-transform: uppercase;
 	color: #09f;
+}
+
+.section-title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 nav {
@@ -76,6 +83,73 @@ nav {
 	background-position: center;
 }
 
+main {
+	margin: 60px 0;
+	padding: 0 20px;
+}
+
+.about-us-info {
+	margin-bottom: 10px;
+}
+
+.products {
+	margin: 60px auto;
+}
+
+.products-box {
+	font-size: 0;
+}
+
+.product {
+	position: relative;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.product h3 {
+	margin-bottom: 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.first-product {
+	background-image: url('../img/victory_small.jpg');
+}
+
+.second-product {
+	background-image: url('../img/laptop_small.jpg');
+}
+
+.third-product {
+	background-image: url('../img/woman_small.jpg');
+}
+
+.fourth-product {
+	background-image: url('../img/keyboard_small.jpg');
+}
+
+.contact {
+	text-align: center;
+}
+
+.contact h3{
+	margin: 30px 0 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.contact i {
+	margin-right: 10px;
+}
+
+footer {
+	padding: 30px 10px;
+	text-align: center;
+	background-color: #ddd;
+}
+
 @media (min-width: 768px) {
 	.nav-items {
 		display: block;
@@ -107,6 +181,16 @@ nav {
 
 	.hero-text p {
 		font-size: 18px;
+	}
+
+	.product h3 {
+		font-size: 24px;
+	}
+}
+@media (min-width: 992px) {
+	.product {
+		display: inline-block;
+		width: 50%;
 	}
 }
 
