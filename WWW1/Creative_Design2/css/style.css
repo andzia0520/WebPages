@@ -84,10 +84,19 @@ nav {
 
 main {
 	margin: 60px 0;
+	padding: 0 20px;
+}
+
+.about-us-info {
+	margin-bottom: 10px;
 }
 
 .products {
 	margin: 60px auto;
+}
+
+.products-box {
+	font-size: 0;
 }
 
 .product {
@@ -99,6 +108,7 @@ main {
 }
 
 .product h3 {
+	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 
@@ -149,6 +159,16 @@ main {
 
 	.hero-text p {
 		font-size: 18px;
+	}
+
+	.product h3 {
+		font-size: 24px;
+	}
+}
+@media (min-width: 992px) {
+	.product {
+		display: inline-block;
+		width: 50%;
 	}
 }
 
