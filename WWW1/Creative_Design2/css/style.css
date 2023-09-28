@@ -41,6 +41,12 @@ body {
 	color: #09f;
 }
 
+.section-title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 nav {
 	height: 60px;
 	line-height: 60px;
@@ -74,6 +80,42 @@ nav {
 	background-image: url('../img/hero_small.jpg');
 	background-size: cover;
 	background-position: center;
+}
+
+main {
+	margin: 60px 0;
+}
+
+.products {
+	margin: 60px auto;
+}
+
+.product {
+	position: relative;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.product h3 {
+	text-transform: uppercase;
+}
+
+.first-product {
+	background-image: url('../img/victory_small.jpg');
+}
+
+.second-product {
+	background-image: url('../img/laptop_small.jpg');
+}
+
+.third-product {
+	background-image: url('../img/woman_small.jpg');
+}
+
+.fourth-product {
+	background-image: url('../img/keyboard_small.jpg');
 }
 
 @media (min-width: 768px) {
