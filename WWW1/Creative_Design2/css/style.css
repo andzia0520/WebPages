@@ -4,8 +4,15 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
+}
+
+section {
+	scroll-margin-top: 70px;
 }
 
 .wrapper {
@@ -49,10 +56,13 @@ body {
 }
 
 nav {
+	position: sticky;
+	top: 0;
 	height: 60px;
 	line-height: 60px;
 	background-color: #ddd;
 	text-align: center;
+	z-index: 10;
 }
 
 .burger-icon {
@@ -112,6 +122,11 @@ main {
 	margin-bottom: 10px;
 	font-size: 14px;
 	text-transform: uppercase;
+	transition: transform 0.5;
+}
+
+.product:hover h3 {
+	transform: scale(1.6);
 }
 
 .first-product {
@@ -134,7 +149,7 @@ main {
 	text-align: center;
 }
 
-.contact h3{
+.contact h3 {
 	margin: 30px 0 5px;
 	text-align: center;
 	text-transform: uppercase;
@@ -145,7 +160,9 @@ main {
 }
 
 footer {
-	padding: 30px 10px;
+	position: sticky;
+	bottom: 0;
+	padding: 10px 10px;
 	text-align: center;
 	background-color: #ddd;
 }
@@ -191,6 +208,10 @@ footer {
 	.product {
 		display: inline-block;
 		width: 50%;
+	}
+
+	.section-title {
+		font-size: 32px;
 	}
 }
 
