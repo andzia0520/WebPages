@@ -5,105 +5,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abstract</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header>
-        <img src="./img/logo.svg" alt="Logo Abstract">
-        <a href="#"> Help Center</a>
-        <button>Submit a request</button>
-        <button>Sign in</button>
+        <div class="topbar">
+            <div class="topbar__links">
+                <a class="topbar__logo" target="_blank" title="Go to goabstract.com" href="https://www.goabstract.com">
+                    <img class="img__logo" src="./img/logo.svg" alt="Logo Abstract">
+                </a>
+                <a class="topbar__help" href="#">Help Center</a>
+            </div>
+            <div class="topbar__buttons">
+                <button class="topbar__submit">Submit a request</button>
+                <button class="topbar__signIn">Sign in</button>
+            </div>
+
+            <button class="burger-btn">
+                <div class="burger-btn__box">
+                    <div class="burger-btn__bars"></div>
+                </div>
+            </button>
+        </div>
+
+        <div class="nav__items notvisible">
+            <button class="nav__item">Submit a request</button>
+            <hr>
+            <button class="nav__item">Sign in</btn>
+        </div>
+
     </header>
     <main>
-        <section>
+        <section class="search">
             <p>How can we help?</p>
             <form>
-                <input type="search" placeholder="Search">
-                <box-icon name='right-arrow-alt'></box-icon>
+                <input class="search-input" type="search" placeholder="Search">
+                <box-icon class="arrow-img" name='right-arrow-alt'></box-icon>
             </form>
         </section>
-        <section>
-            <div>
-                <img src="./img/UsingAbstract.png" alt="Some graphic">
-                <p>Using Abstract</p>
-                <p>Abstract lets you manage, version, and document your designs in one place.</p>
-                <a href="#">Learn more</a>
+        <section class="categories">
+            <div class="category-item">
+                <div class="category-icon"><img src="./img/UsingAbstract.png" alt="Some graphic"></div>
+                <div class="category-content">
+                    <h3>Using Abstract</h3>
+                    <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                    <p class="learnMore"><a href="#">Learn more</a>
+                        <box-icon class="arrow-img" name='right-arrow-alt'></box-icon>
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="./img/manageOrgs.png" alt="A puzzle">
-                <p>Manage organizations, teams, and projects</p>
-                <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
-                <a href="#">Learn more</a>
+            <div class="category-item">
+                <div class="category-icon"><img src="./img/manageAccount.png" alt="Two icons of people"></div>
+                <div class="category-content">
+                    <h3>Manage your account</h3>
+                    <p>Configure your account settings, such as your email, profile details, and password.</p>
+                    <p class="learnMore"><a href="#">Learn more</a>
+                        <box-icon class="arrow-img" name='right-arrow-alt'></box-icon>
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="./img/Authenticate.png" alt="A key">
-                <p>Authenticate to Abstract</p>
-                <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
-                <a href="#">Learn more</a>
+            <div class="category-item">
+                <div class="category-icon"><img src="./img/manageOrgs.png" alt="A puzzle"></div>
+                <div class="category-content">
+                    <h3>Manage organizations, teams, and projects</h3>
+                    <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                    <p class="learnMore"><a href="#">Learn more</a>
+                        <box-icon class="arrow-img" name='right-arrow-alt'></box-icon>
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="./img/manageAccount.png" alt="Two icons of people">
-                <p>Manage your account</p>
-                <p>Configure your account settings, such as your email, profile details, and password.</p>
-                <a href="#">Learn more</a>
+            <div class="category-item">
+                <div class="category-icon"><img src="./img/manageBilling.png" alt="A dollar symbol"></div>
+                <div class="category-content">
+                    <h3>Manage billing</h3>
+                    <p>Change subscriptions and payment details.</p>
+                    <p class="learnMore"><a href="#">Learn more</a>
+                        <box-icon class="arrow-img" name='right-arrow-alt'></box-icon>
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="./img/manageBilling.png" alt="A dollar symbol">
-                <p>Manage billing</p>
-                <p>Change subscriptions and payment details.</p>
-                <a href="#">Learn more</a>
+            <div class="category-item">
+                <div class="category-icon"><img src="./img/Authenticate.png" alt="A key"></div>
+                <div class="category-content">
+                    <h3>Authenticate to Abstract</h3>
+                    <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                    <p class="learnMore"><a href="#">Learn more</a>
+                        <box-icon class="arrow-img" name='right-arrow-alt'></box-icon>
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="./img/abstractSupport.png" alt="A chat box">
-                <p>Abstract support</p>
-                <p>Get in touch with a human.</p>
-                <a href="#">Learn more</a>
+
+            <div class="category-item">
+                <div class="category-icon">
+                    <img src="./img/abstractSupport.png" alt="A chat box">
+                </div>
+                <div class="category-content">
+                    <h3>Abstract support</h3>
+                    <p>Get in touch with a human.</p>
+                    <p class="learnMore"><a href="#">Learn more</a>
+                        <box-icon class="arrow-img" name='right-arrow-alt'></box-icon>
+                    </p>
+                </div>
             </div>
         </section>
 
     </main>
     <footer>
-        <div>
-            <p>Abstract</p>
-            <a href="#">Start Trial</a>
-            <a href="#">Pricing</a>
-            <a href="#">Download</a>
+        <div class="footer-columns ">
+            <div class="footer-column">
+                <h4>Abstract</h4>
+                <ul>
+                    <li><a href="#">Start Trial</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Download</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Release Notes</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Dribbble</a></li>
+                    <li><a href="#">Podcast</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+                <div class="contactUs">
+                    <h4>Contact Us</h4>
+                    <p>info@abstract.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright-inner"><img class="img-logo--smaller" src="./img/logo.svg" alt="Logo Abstract">
+                    <p>&copy;Copyright 2023</p>
+                    <p>Abstract Studio Design, Inc.</p>
+                    <p>All rights reserved</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>Resources</p>
-            <a href="#">Blog</a>
-            <a href="#">Help Center</a>
-            <a href="#">Release Notes</a>
-            <a href="#">Status</a>
-        </div>
-        <div>
-            <p>Community</p>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Facebook</a>
-            <a href="#">Dribbble</a>
-            <a href="#">Podcast</a>
-        </div>
-        <div>
-            <p>Company</p>
-            <a href="#">about us</a>
-            <a href="#">Careers</a>
-            <a href="#">Legal</a>
-        </div>
-        <div>
-            <p>Contact Us</p>
-            <p>info@abstract.com</p>
-        </div>
-        <div>
-            <img src="./img/logo.svg" alt="Logo Abstract">
-            <p>&copy;Copyright 2023</p>
-            <p>Abstract Studio Design, Inc.</p>
-            <p>All rights reserved</p>
-        </div>
+
     </footer>
 
+    <script src="./main.js"></script>
 </body>
-
 </html>
